@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Goods Donation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For icons -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Goods Donation Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="request.html">Request Goods</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="login">
+            <div class="login-container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="user-type">I am a</label>
+                    <select id="user-type" name="user-type" required>
+                        <option value="donor">Donor</option>
+                        <option value="receiver">Receiver</option>
+                    </select>
+
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    
+                    <p>or</p>
+                    
+                    <button class="google-login-btn"><i class="fab fa-google"></i> Login with Google</button>
+
+                    <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Goods Donation Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
